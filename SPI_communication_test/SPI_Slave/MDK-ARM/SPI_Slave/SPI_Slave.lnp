@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"spi_slave\startup_stm32f030x8.o"
+"spi_slave\main.o"
+"spi_slave\stm32f0xx_it.o"
+"spi_slave\stm32f0xx_hal_msp.o"
+"spi_slave\stm32f0xx_hal_spi.o"
+"spi_slave\stm32f0xx_hal_spi_ex.o"
+"spi_slave\stm32f0xx_hal_tim.o"
+"spi_slave\stm32f0xx_hal_tim_ex.o"
+"spi_slave\stm32f0xx_hal_rcc.o"
+"spi_slave\stm32f0xx_hal_rcc_ex.o"
+"spi_slave\stm32f0xx_hal.o"
+"spi_slave\stm32f0xx_hal_i2c.o"
+"spi_slave\stm32f0xx_hal_i2c_ex.o"
+"spi_slave\stm32f0xx_hal_gpio.o"
+"spi_slave\stm32f0xx_hal_dma.o"
+"spi_slave\stm32f0xx_hal_cortex.o"
+"spi_slave\stm32f0xx_hal_pwr.o"
+"spi_slave\stm32f0xx_hal_pwr_ex.o"
+"spi_slave\stm32f0xx_hal_flash.o"
+"spi_slave\stm32f0xx_hal_flash_ex.o"
+"spi_slave\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "SPI_Slave\SPI_Slave.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SPI_Slave.map" -o SPI_Slave\SPI_Slave.axf

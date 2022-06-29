@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"slave_mode\startup_stm32f446xx.o"
+"slave_mode\main.o"
+"slave_mode\stm32f4xx_it.o"
+"slave_mode\stm32f4xx_hal_msp.o"
+"slave_mode\stm32f4xx_hal_spi.o"
+"slave_mode\stm32f4xx_hal_tim.o"
+"slave_mode\stm32f4xx_hal_tim_ex.o"
+"slave_mode\stm32f4xx_hal_uart.o"
+"slave_mode\stm32f4xx_hal_rcc.o"
+"slave_mode\stm32f4xx_hal_rcc_ex.o"
+"slave_mode\stm32f4xx_hal_flash.o"
+"slave_mode\stm32f4xx_hal_flash_ex.o"
+"slave_mode\stm32f4xx_hal_flash_ramfunc.o"
+"slave_mode\stm32f4xx_hal_gpio.o"
+"slave_mode\stm32f4xx_hal_dma_ex.o"
+"slave_mode\stm32f4xx_hal_dma.o"
+"slave_mode\stm32f4xx_hal_pwr.o"
+"slave_mode\stm32f4xx_hal_pwr_ex.o"
+"slave_mode\stm32f4xx_hal_cortex.o"
+"slave_mode\stm32f4xx_hal.o"
+"slave_mode\stm32f4xx_hal_exti.o"
+"slave_mode\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "slave_mode\slave_mode.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "slave_mode.map" -o slave_mode\slave_mode.axf
