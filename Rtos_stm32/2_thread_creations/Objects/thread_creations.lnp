@@ -1,7 +1,7 @@
---cpu=Cortex-M4.fp
+--cpu=Cortex-M4.fp.sp
 ".\objects\main.o"
 ".\objects\led.o"
-"C:\Users\suraj\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS\RTX\LIB\ARM\RTX_CM4.lib"
+"C:\Users\EmbedOs\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS\RTX\LIB\ARM\RTX_CM4.lib"
 ".\objects\rtx_conf_cm.o"
 ".\objects\startup_stm32f446xx.o"
 ".\objects\system_stm32f4xx.o"
